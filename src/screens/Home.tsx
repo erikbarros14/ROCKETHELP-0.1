@@ -5,6 +5,7 @@ import Logo from '../assets/logo_secondary.svg'
 import { SignOut } from 'phosphor-react-native';
 import {Filter} from '../components/Filter'
 import {Orders , OrderProps}  from '../components/Orders'
+import { Button } from '../components/Button';
 
 export function Home() {
     const {colors} = useTheme()
@@ -65,6 +66,7 @@ export function Home() {
         keyExtractor={item => item.id}
         renderItem={({item}) => <Orders data={item} /> }
         />
+         <Button title='nova solicitção' />
         </VStack>
 
     </VStack>
